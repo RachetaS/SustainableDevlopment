@@ -1,0 +1,304 @@
+
+       /* Reset styles */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Global styles */
+    body {
+        color: white;
+        line-height: 1.6;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+   
+    .container {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+       
+    }
+    .content{
+     
+        background-image: url("https://sustain.org/wp-content/uploads/2018/04/Solar-Panel-India-1.jpg");
+        background-size: cover;
+        text-align: center;
+        padding: 80px 0;
+        height: 400px;
+    }
+    
+    .content h1 {
+        font-size: 3em;
+        margin-bottom: 0.5em;
+        color: white;
+    }
+    
+    .content p {
+        font-size: 1.5em;
+        color:white;
+    }
+    
+    main {
+        padding: 10px 0;
+    }
+    
+    section {
+        padding: 40px 0;
+    }
+    
+    .container h2 {
+        font-size: 2.5em;
+        font-weight: 600;
+        color:#228B22;
+    }
+    
+    p {
+        font-size: 1.2em;
+        line-height: 1.8;
+        margin-bottom: 1.5em;
+        color: white;
+        font-weight: 200;
+    }
+    #about{
+       
+     
+    }
+    main{
+        
+    }
+    #about p{
+        color: black;
+    }
+    
+    .card {
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .card img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    header {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:#228B22;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+       
+    }
+    .navbar{
+        display: flex;
+    }
+    .logo{
+        margin-left: 150px;
+    }
+    .logo img{
+        border-radius: 50px;
+    }
+    .heads{
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 1rem;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+    footer {
+        background: #228B22;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+
+    #community{
+   
+
+    }
+    #community  h2{
+       
+      
+    }
+    .our{
+        padding-top: 30px;
+        
+       
+        justify-content: space-between;
+        
+    }
+    .our .card{
+        background-image: url("https://www.nationalcivicleague.org/wp-content/uploads/2018/09/Linkhart.lakewood.jpeg");
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+    }
+    .our .card .card-body{
+       
+        color: white;
+        width: 100%;
+        height: 100%;
+        top:0;
+        right: -100%;
+        position: absolute;
+        background: #40616b38;
+        backdrop-filter: blur(5px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 2s;
+        padding: 30px;
+    }
+    .card:hover .card-body{
+       right: 0;
+    }
+    .our .card .card-body button{
+        padding: 10px 10px;
+         background-color: rgb(167, 247, 192); 
+        border:none;
+        border-radius: 30px;
+        color: white;
+    }
+    .our .card .card-body h6{
+        font-size: 40px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .our .card2{
+        background-image: url("https://www.ontarioparks.ca/parksblog/wp-content/uploads/2022/09/Restoule_StormyLookout-3-825x510.jpg");
+        background-size: cover;
+       
+    }
+    .our .card .card-body button:hover{
+        padding: 10px 15px;
+    }
+    .our .card3{
+        background-image: url("https://www.shutterstock.com/image-photo/businessman-using-mobile-smartphone-icon-260nw-1469612204.jpg");
+        background-size: cover;
+    }
+    .our .card4{
+        background-image: url("https://healthhub.hif.com.au/theme/bloghifcomau/assets/public/Image/Blog/social_health.jpg");
+        background-size: cover;
+    }
+    .initiate{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .scard img{
+        border-radius: 100px;
+        box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5); 
+    }
+    .scard img:hover{
+        box-shadow: 8px 8px 15px rgba(129, 255, 200, 0.6);
+    }
+
+    .hidden{
+        opacity: 0;
+        filter:blur(5px);
+        transform: translateX(-100%);
+        transition: all 1s;
+    }
+    .show{
+        opacity: 1;
+        filter:blur(0);
+        transform: translateX(0);
+    }
+
+    .our:nth-child(2){
+         transition-delay: 200ms;
+    }
+    .our:nth-child(3){
+        transition-delay: 400ms;
+   }
+   .our:nth-child(4){
+    transition-delay: 600ms;
+}
+#initiatives{
+    background-color: white;
+}
+
+
+/* form contact */
+.conts {
+    width: 80%;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(34, 34, 34, 0.1);
+}
+.conts h2 {
+  
+    font-size: 2.5em;
+    font-weight: 600;
+    color:#228B22;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+     border-radius: 30px;
+      
+}
+button:hover {
+    background-color: #45a049;
+}
+#contact{
+    background-image: url("https://image.slidesdocs.com/responsive-images/background/light-effect-nature-abstract-floral-green-flowers-powerpoint-background_737020f280__960_540.jpg");
+}
+#initiatives h2{
+   
+    font-size: 2.5em;
+    font-weight: 600;
+    color:#228B22;
+    margin-left: 150px;
+}
+
+@media(max-width:768px){
+    
+    .hidden{
+        opacity:1;
+    }
+}
